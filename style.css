@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "metropolis";
+    src: url(./Metropolis-Regular.ttf);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-bg: #ffffff;
+    --box-bg: #F4FBF9;
+    --button-bg: #007F61;
+    --text-color1: #000000;
+    --text-color2: #007F61;
+    --text-color3: #9F9F9F;
+    --button-text-color: #ffffff;
+    --border-color: #C8C8C8;
+    --font-size1: 18.8px;
+    --font-size2: 16px;
+    --font-size3: 14.46px;
+    --font-size4: 14px;
+    --font-size5: 12px;
+    --font-size6: 10px;
+    --duration-short: .1s;
+    --duration-default: .3s;
+}
+.bundle-product .container{
+    width: 681px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.bundle-product .products{
+    text-align:  center;
+}
+.bundle-product .products .main-title .title{
+    position: relative;
+}
+.bundle-product .main-title h2{
+    font-family: "metropolis";
+    color: var(--text-color2);
+    font-size: var(--font-size1);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.bundle-product .products .main-title .title{
+    position: relative;
+}
+.bundle-product .products .main-title .title:before , .bundle-product .products .main-title .title:after {
+    content: "";
+    position: absolute;
+    border: 1px solid  var(--border-color);
+    width: 38%;
+}
+.bundle-product .products .main-title .title:before{
+    top: 10px;
+    right: 62%;
+}
+.bundle-product .products .main-title .title::after{
+    top: 10px;
+    left: 62%;
+}
+.bundle-product .products .first-pair-variants .checkbox{
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.bundle-product .products .first-pair-variants .checkbox .checkbox-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: baseline;
+    margin-left: 20px;
+}
+.bundle-product .products .first-pair-variants .two-price{
+    display: flex;
+    align-items: center;
+}
+.bundle-product .products .first-pair-variants .two-price .compare-price{
+    margin-left: 15px;
+    text-decoration: line-through;
+    color: #9F9F9F;
+    font-family: "metropolis";
+    font-size: var(--font-size5);
+}
+.bundle-product .products .first-pair-variants .checkbox .checkbox-name h3{
+    margin: 5px 0;
+    font-size: var(--font-size3);
+    font-weight: 400;
+    font-family: "metropolis";
+}
+.bundle-product .products .first-pair-variants .checkbox .checkbox-name p{
+    margin: 5px 0;
+    font-size: var(--font-size3);
+    font-weight: 600;
+    font-family: "metropolis";
+}
+.bundle-product .products .first-pair-variants #selected1 , .bundle-product .products .first-pair-variants #selected2 , .bundle-product .products .first-pair-variants #selected3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #C8C8C8;
+    padding: 40px;
+    border-radius: 5px;
+}
+.bundle-product .products .first-pair-variants{
+    margin-bottom: 35px;
+}
+.bundle-product .products .first-pair-variants.second .select-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bundle-product .products .first-pair-variants .varaiant-offer{
+    text-align: right;
+}
+.bundle-product .products .first-pair-variants .varaiant-offer P{
+    font-size: var(--font-size3);
+    font-weight: 600;
+    font-family: "metropolis";
+}
+
+.select-box-size-color1 { 
+    display: flex;     
+    column-gap: 10px; 
+}
+.size-selector-1 { 
+    display: flex;     
+    flex-direction: column; 
+    align-items: center;
+}
+.size-selector-1 .size-selector .size-1 , .color-selector-1 .color-selector .color-1  { 
+    margin-bottom: 10px;
+}
+
+.products .first-pair-variants select {    
+     padding: 5px 30px 5px 5px; 
+     font-size: var(--font-size3);
+}
+.bundle-product .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bundle-product .cart-button input{
+    width: 100%;
+    font-size: var(--font-size3);
+    font-family: "metropolis";
+    color: var(--button-text-color);
+    background-color: var(--button-bg);
+    padding: 24px 0;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s all linear;
+}
+.bundle-product .cart-button input:hover{
+    color: #000000;
+    background-color: var(--button-bg);
+    opacity: 0.6;
+}
+.bundle-product span.copyright-text{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    font-family: "metropolis";
+    font-size: var(--font-size5);
+    font-style: italic;
+}
+.bundle-product .price p {
+    font-family: "metropolis";
+    font-size: var(--font-size4);
+    text-transform: capitalize;
+    color: var(--button-bg);
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.bundle-product .price .compare-price span{
+    font-family: "metropolis";
+    font-size: var(--font-size4);
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+}
+.select-box-size-color select, .select-box-size-color label ,.select-box-size-color .color-name ,.select-box-size-color .size-name{
+    font-family: 'Inter', sans-serif;
+}
+.select-box-size-color .color-name ,.select-box-size-color .size-name , .select-box-size-color label{
+    font-size: var(--font-size4);
+}
+.select-box-size-color label{
+    margin-right: 10px;
+}
+.bundle-product .products .first-pair-variants .varaiant-offer h3{
+    font-family: "metropolis";
+    margin-top: 0;
+}
+.bundle-product .products .first-pair-variants #selected1.first , .bundle-product .products .first-pair-variants #selected2.second , .bundle-product .products .first-pair-variants #selected3.third{
+    background-color: var(--box-bg);
+    align-items: flex-start;
+}
+.bundle-product .products .first-pair-variants .varaiant-offer h3{
+    margin-bottom: 10px;
+}
+.bundle-product .products .first-pair-variants #selected2.second .varaiant-offer h3{
+    color: var(--button-bg);
+}
+.bundle-product .products .first-pair-variants #selected2.second .two-price .compare-price{
+    font-family: 'Inter', sans-serif;
+}
+.bundle-product .products .first-pair-variants #selected1.first .checkbox .checkbox-name h3 , 
+.bundle-product .products .first-pair-variants #selected1.first .checkbox .checkbox-name p , 
+.bundle-product .products .first-pair-variants #selected1.first .two-price .compare-price, 
+.bundle-product .products .first-pair-variants #selected1.first .varaiant-offer P,
+.bundle-product .products .first-pair-variants #selected1.first .varaiant-offer h3{
+    font-family: 'Inter', sans-serif;
+}
+.bundle-product .products .first-pair-variants #selected2.second .checkbox .checkbox-name h3 , 
+.bundle-product .products .first-pair-variants #selected2.second .checkbox .checkbox-name p , 
+.bundle-product .products .first-pair-variants #selected2.second.two-price .compare-price, 
+.bundle-product .products .first-pair-variants #selected2.second .varaiant-offer P,
+.bundle-product .products .first-pair-variants #selected2.second .varaiant-offer h3{
+    font-family: 'Inter', sans-serif;
+}
+.bundle-product .products .first-pair-variants #selected3.third .checkbox .checkbox-name h3 , 
+.bundle-product .products .first-pair-variants #selected3.third .checkbox .checkbox-name p , 
+.bundle-product .products .first-pair-variants #selected3.third .two-price .compare-price, 
+.bundle-product .products .first-pair-variants #selected3.third .varaiant-offer P,
+.bundle-product .products .first-pair-variants #selected3.third .varaiant-offer h3{
+    font-family: 'Inter', sans-serif;
+}
+#divcheck1 , #divcheck2 , #divcheck3{
+    display: none;
+}
+.first #divcheck1 , .second #divcheck2 , .third #divcheck3{
+    display: block;
+}
+
+.bundle-product .products .first-pair-variants .checkbox .radio-round{
+    accent-color: var(--button-bg);
+    cursor: pointer;
+}
+input:focus-visible{
+    outline: 0px;
+}
+
+
+@media (max-width: 994px){
+    .bundle-product .container{
+        width: 600px;
+}
+}
+@media (max-width: 767px){
+    .bundle-product .container{
+        width: auto;
+}
+}
+
+@media (max-width: 576px){
+    .bundle-product .products .first-pair-variants .checkbox{
+        justify-content: center;
+    }
+    .bundle-product .products .first-pair-variants #selected1 , .bundle-product .products .first-pair-variants #selected2 , .bundle-product .products .first-pair-variants #selected3{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bundle-product .products .first-pair-variants .varaiant-offer h3{
+        margin-top: 10px;
+    }
+    .bundle-product .products .main-title .title:before, .bundle-product .products .main-title .title:after{
+        border: 0;
+    }
+    .bundle-product .products .first-pair-variants #selected1.first , .bundle-product .products .first-pair-variants #selected2.second , .bundle-product .products .first-pair-variants #selected3.third{
+        align-items: center;
+    }
+    .bundle-product .products .first-pair-variants .varaiant-offer{
+        text-align: center;
+    }
+}

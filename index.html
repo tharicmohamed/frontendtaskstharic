@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="bundle-product">
+      <div class="container">
+        <div class="products">
+          <div class="main-title">
+            <h2 class="title">Bundle & Save</h2>
+          </div>
+          <div class="first-pair-variants" >
+            <div id="selected1" class="variants">
+            <div class="select-box">
+              <div class="checkbox">
+                <div class="checkbox-label">
+                  <input type="radio" class="radio-round active" id="radio1" name="radio" onclick="checkMe()" />
+                </div>
+                <div class="checkbox-name">
+                  <h3 class="variant-name">1 Pair</h3>
+                  <p class="variant-price">DKK 195.00</p>
+                </div>
+              </div>
+              <div class="select-box-size-color" id="divcheck1">
+                <div class="select-box-size-color1">
+                  <div class="size-selector-1">
+                    <p class="size-name"> Size</p>
+                    <div class="size-selector">
+                      <div class="size-1">
+                        <label for="size">#1</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                      <div class="select-box-size-color2">
+                        <label for="size">#2</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-selector-1">
+                    <p class="color-name"> Color </p>
+                    <div class="color-selector">
+                      <div class="color-1">
+                        <select id="color" name="color">
+                          <option value="color">color</option>
+                          <option value="red">red</option>
+                          <option value="blue">blue</option>
+                          <option value="extra">green</option>
+                        </select>
+                      </div>
+                      <select id="color" name="color">
+                        <option value="color">color</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="extra">green</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="varaiant-offer">
+              <p>50% off</p>
+            </div>
+          </div>
+        </div>
+        <div class="first-pair-variants" >
+          <div id="selected2" class="variants">
+            <div class="select-box">
+              <div class="checkbox">
+                <div class="checkbox-label">
+                  <input type="radio" class="radio-round" id="radio2" name="radio" onclick="checkMe()" />
+                </div>
+                <div class="checkbox-name">
+                  <h3 class="variant-name">2 Pair</h3>
+                  <div class="two-price">
+                  <p class="variant-price">DKK 345.00</p>
+                  <span class="compare-price">DKK 195.00</span>
+                </div>
+                </div>
+              </div>
+              <div class="select-box-size-color" id="divcheck2">
+                <div class="select-box-size-color1">
+                  <div class="size-selector-1">
+                    <p class="size-name"> Size</p>
+                    <div class="size-selector">
+                      <div class="size-1">
+                        <label for="size">#1</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                      <div class="select-box-size-color2">
+                        <label for="size">#2</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-selector-1">
+                    <p class="color-name"> Color </p>
+                    <div class="color-selector">
+                      <div class="color-1">
+                        <select id="color" name="color">
+                          <option value="color">color</option>
+                          <option value="red">red</option>
+                          <option value="blue">blue</option>
+                          <option value="extra">green</option>
+                        </select>
+                      </div>
+                      <select id="color" name="color">
+                        <option value="color">color</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="extra">green</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="varaiant-offer">
+              <h3 class="">Most Popular</h3>
+              <p>40% off</p>
+            </div>
+          </div>
+        </div>
+          <div class="first-pair-variants">
+            <div id="selected3" class="variants">
+            <div class="select-box">
+              <div class="checkbox">
+                <div class="checkbox-label">
+                  <input type="radio" class="radio-round" id="radio3" name="radio" onclick="checkMe();" />
+                </div>
+                <div class="checkbox-name">
+                  <h3 class="variant-name">3 Pair</h3>
+                  <p class="variant-price">DKK 528.00</p>
+                </div>
+              </div>
+              <div class="select-box-size-color" id="divcheck3">
+                <div class="select-box-size-color1">
+                  <div class="size-selector-1">
+                    <p class="size-name"> Size</p>
+                    <div class="size-selector">
+                      <div class="size-1">
+                        <label for="size">#1</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                      <div class="select-box-size-color2">
+                        <label for="size">#2</label>
+                        <select id="size" name="size">
+                          <option value="small">size</option>
+                          <option value="medium">s</option>
+                          <option value="large">m</option>
+                          <option value="extra">l</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-selector-1">
+                    <p class="color-name"> Color </p>
+                    <div class="color-selector">
+                      <div class="color-1">
+                        <select id="color" name="color">
+                          <option value="color">color</option>
+                          <option value="red">red</option>
+                          <option value="blue">blue</option>
+                          <option value="extra">green</option>
+                        </select>
+                      </div>
+                      <select id="color" name="color">
+                        <option value="color">color</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="extra">green</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="varaiant-offer">
+              <p>60% off</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="price">
+          <p>Free 2 Day Shipping</p>
+          <div class="compare-price">
+            <span>Total: DKK 360.00</span>
+          </div>
+        </div>
+        <div class="cart-button">
+          <input type="button" value="+ Add to cart">
+        </div>
+        <span class="copyright-text"> &copy; Powered by Pumper</span>
+      </div>
+      </div>
+</section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
